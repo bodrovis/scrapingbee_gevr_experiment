@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "harness_error": false,
+  "phase": "preflight",
+  "errors": [
+    "Disallowed import: argparse"
+  ],
+  "feedback": [
+    "Disallowed import: argparse"
+  ],
+  "warnings": [
+    "Static preflight is a policy check, not a security sandbox."
+  ],
+  "stats": {}
+}

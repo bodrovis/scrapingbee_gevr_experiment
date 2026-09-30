@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "harness_error": false,
+  "errors": [
+    "Disallowed sys attribute: sys.exit"
+  ],
+  "feedback": [
+    "Disallowed sys attribute: sys.exit"
+  ],
+  "warnings": [
+    "Static preflight is a policy check, not a security sandbox."
+  ],
+  "stats": {}
+}

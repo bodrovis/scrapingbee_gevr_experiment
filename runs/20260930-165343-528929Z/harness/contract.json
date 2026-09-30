@@ -1,0 +1,37 @@
+{
+  "target_url": "https://scrapifydatalabs.com/playground/infinite-scroll",
+  "expected_total_items": 48,
+  "selectors": {
+    "list": "#scroll-list",
+    "item": "#scroll-list .feed-item",
+    "complete": "#scroll-list[data-complete=\"true\"]"
+  },
+  "initial_fetch": {
+    "render_js": true,
+    "wait_for": "#scroll-list .feed-item"
+  },
+  "refined_fetch": {
+    "render_js": true,
+    "js_scenario": {
+      "instructions": [
+        {
+          "wait_for": "#scroll-list .feed-item"
+        },
+        {
+          "infinite_scroll": {
+            "max_count": 12,
+            "delay": 500
+          }
+        },
+        {
+          "wait_for": "#scroll-list[data-complete=\"true\"]"
+        }
+      ]
+    }
+  },
+  "exact_fields": true,
+  "field_requirements": {
+    "position": "1-based integer position in DOM order",
+    "text": "non-empty normalized visible text of the .feed-item"
+  }
+}

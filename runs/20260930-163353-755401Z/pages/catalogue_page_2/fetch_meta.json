@@ -1,0 +1,16 @@
+{
+  "status_code": 200,
+  "scrapingbee_cost": "1",
+  "scrapingbee_request_id": "e3e34818-d00c-476a-8311-7bcba8db10ab",
+  "resolved_url": "https://books.toscrape.com/catalogue/page-2.html",
+  "content_type": "text/html",
+  "render_js": false,
+  "fetched_at_utc": "2026-09-30T16:33:57.150166+00:00",
+  "target_name": "catalogue_page_2",
+  "target_role": "holdout",
+  "requested_url": "https://books.toscrape.com/catalogue/page-2.html",
+  "source_url": "https://books.toscrape.com/catalogue/page-2.html",
+  "normalized_encoding": "UTF-8",
+  "raw_bytes": 50877,
+  "normalized_characters": 50853
+}

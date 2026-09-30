@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "source": "Scrapify Playground",
+    "description": "Sample product API for scraping practice",
+    "count": 16
+  },
+  "products": [
+    {
+      "id": "p-1001",
+      "title": "NovaPulse Wireless Headphones",
+      "category": "Audio",
+      "price": 129.99,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviews": 214,
+      "in_stock": true
+    },
+    {
+      "id": "p-1002",
+      "title": "OrbitFit Smartwatch Pro",
+      "category": "Wearables",
+      "price": 199.0,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviews": 508,
+      "in_stock": true
+    },
+    {
+      "id": "p-1003",
+      "title": "LumenFrame Mirrorless X2",
+      "category": "Cameras",
+      "price": 899.5,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviews": 91,
+      "in_stock": false
+    },
+    {
+      "id": "p-1004",
+      "title": "ClickForge Mechanical Keyboard",
+      "category": "Accessories",
+      "price": 89.0,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviews": 1203,
+      "in_stock": true
+    },
+    {
+      "id": "p-1005",
+      "title": "ClearView 27\" 4K Display",
+      "category": "Monitors",
+      "price": 349.99,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviews": 332,
+      "in_stock": true
+    },
+    {
+      "id": "p-1006",
+      "title": "TrailPack Daypack 22L",
+      "category": "Bags",
+      "price": 64.25,
+      "currency": "USD",
+      "rating": 4.2,
+      "reviews": 77,
+      "in_stock": true
+    },
+    {
+      "id": "p-1007",
+      "title": "AetherController Elite",
+      "category": "Gaming",
+      "price": 59.99,
+      "currency": "USD",
+      "rating": 4.1,
+      "reviews": 640,
+      "in_stock": false
+    },
+    {
+      "id": "p-1008",
+      "title": "GlowDesk LED Lamp",
+      "category": "Home",
+      "price": 42.0,
+      "currency": "USD",
+      "rating": 4.3,
+      "reviews": 189,
+      "in_stock": true
+    },
+    {
+      "id": "p-1009",
+      "title": "WaveBar Mini Speaker",
+      "category": "Audio",
+      "price": 39.99,
+      "currency": "USD",
+      "rating": 4.2,
+      "reviews": 3881,
+      "in_stock": true
+    },
+    {
+      "id": "p-1010",
+      "title": "VoltCharge GaN 65W",
+      "category": "Accessories",
+      "price": 29.99,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviews": 2140,
+      "in_stock": true
+    },
+    {
+      "id": "p-1011",
+      "title": "SwiftClick Silent Mouse",
+      "category": "Accessories",
+      "price": 24.5,
+      "currency": "USD",
+      "rating": 4.0,
+      "reviews": 412,
+      "in_stock": true
+    },
+    {
+      "id": "p-1012",
+      "title": "ClearCast USB Microphone",
+      "category": "Audio",
+      "price": 69.0,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviews": 967,
+      "in_stock": true
+    },
+    {
+      "id": "p-1013",
+      "title": "PostureSeat Mesh Chair",
+      "category": "Home",
+      "price": 189.0,
+      "currency": "USD",
+      "rating": 4.3,
+      "reviews": 1554,
+      "in_stock": true
+    },
+    {
+      "id": "p-1014",
+      "title": "AeroBook Air 14",
+      "category": "Computers",
+      "price": 1099.0,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviews": 420,
+      "in_stock": true
+    },
+    {
+      "id": "p-1015",
+      "title": "Nordic Mini 5G Phone",
+      "category": "Phones",
+      "price": 449.0,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviews": 880,
+      "in_stock": false
+    },
+    {
+      "id": "p-1016",
+      "title": "RidgeTent 2-Person",
+      "category": "Outdoors",
+      "price": 189.0,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviews": 256,
+      "in_stock": true
+    }
+  ]
+}

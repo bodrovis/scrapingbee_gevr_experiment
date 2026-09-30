@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "harness_error": false,
+  "errors": [],
+  "feedback": [],
+  "warnings": [],
+  "stats": {
+    "item_count": 48,
+    "reference_item_count": 48,
+    "value_mismatch_count": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "harness_error": false,
+  "errors": [],
+  "feedback": [],
+  "warnings": [],
+  "stats": {
+    "item_count": 11,
+    "reference_item_count": 11,
+    "matched_product_urls": 11,
+    "missing_product_urls": 0,
+    "unexpected_product_urls": 0,
+    "value_mismatch_count": 0,
+    "field_mismatch_counts": {}
+  }
+}

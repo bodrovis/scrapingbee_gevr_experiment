@@ -1,0 +1,71 @@
+{
+  "status_code": 200,
+  "scrapingbee_cost": "5",
+  "scrapingbee_request_id": "8965efa6-ed73-433b-9e88-488f9ef31334",
+  "resolved_url": "https://scrapifydatalabs.com/playground/infinite-scroll",
+  "content_type": "text/html; charset=UTF-8",
+  "render_js": true,
+  "wait_for": null,
+  "js_scenario": {
+    "instructions": [
+      {
+        "wait_for": "#scroll-list .feed-item"
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "wait_for": "#scroll-list[data-complete=\"true\"]"
+      }
+    ]
+  },
+  "fetched_at_utc": "2026-09-30T16:59:13.397437+00:00",
+  "normalized_encoding": "UTF-8",
+  "raw_bytes": 25562,
+  "normalized_characters": 25552
+}

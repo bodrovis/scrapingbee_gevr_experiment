@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "harness_error": false,
+  "errors": [],
+  "feedback": [],
+  "warnings": [],
+  "stats": {
+    "item_count": 16,
+    "reference_item_count": 16,
+    "matched_products": 16,
+    "missing_products": 0,
+    "unexpected_products": 0,
+    "value_mismatch_count": 0,
+    "field_mismatch_counts": {}
+  }
+}

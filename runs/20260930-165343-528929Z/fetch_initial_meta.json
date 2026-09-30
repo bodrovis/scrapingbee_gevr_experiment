@@ -1,0 +1,14 @@
+{
+  "status_code": 200,
+  "scrapingbee_cost": "5",
+  "scrapingbee_request_id": "293554cc-7e06-4f20-9f2f-df303f413c9b",
+  "resolved_url": "https://scrapifydatalabs.com/playground/infinite-scroll",
+  "content_type": "text/html; charset=UTF-8",
+  "render_js": true,
+  "wait_for": "#scroll-list .feed-item",
+  "js_scenario": null,
+  "fetched_at_utc": "2026-09-30T16:53:46.660218+00:00",
+  "normalized_encoding": "UTF-8",
+  "raw_bytes": 11095,
+  "normalized_characters": 11083
+}

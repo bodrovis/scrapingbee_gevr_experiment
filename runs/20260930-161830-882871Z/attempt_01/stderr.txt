@@ -1,0 +1,1 @@
+Disallowed sys attribute: sys.exit

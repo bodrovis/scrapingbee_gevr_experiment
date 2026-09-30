@@ -1,0 +1,16 @@
+{
+  "target_url": "https://scrapifydatalabs.com/playground/js-rendered",
+  "oracle_url": "https://scrapifydatalabs.com/data/products.json",
+  "rendering": {
+    "render_js": true,
+    "wait_for": "#js-product-list[data-ready=\"true\"]"
+  },
+  "exact_fields": true,
+  "field_requirements": {
+    "title": "non-empty string",
+    "price": "positive JSON number",
+    "rating": "JSON number from 0 to 5",
+    "reviews": "non-negative integer",
+    "in_stock": "boolean"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "classification": "FETCH_INCOMPLETE_THEN_REFINED",
+  "initial": {
+    "list_present": true,
+    "item_count": 6,
+    "expected_total_items": 48,
+    "data_complete": "false",
+    "status_text": "6 / 48",
+    "complete": false
+  },
+  "final": {
+    "list_present": true,
+    "item_count": 48,
+    "expected_total_items": 48,
+    "data_complete": "true",
+    "status_text": "48 / 48",
+    "complete": true
+  },
+  "initial_fetch_credits": 5,
+  "refined_fetch_credits": 5,
+  "scrapingbee_total_credits": 10,
+  "refinement_strategy": {
+    "instructions": [
+      {
+        "wait_for": "#scroll-list .feed-item"
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "evaluate": "window.scrollTo(0, document.body.scrollHeight)"
+      },
+      {
+        "wait": 1000
+      },
+      {
+        "wait_for": "#scroll-list[data-complete=\"true\"]"
+      }
+    ]
+  }
+}

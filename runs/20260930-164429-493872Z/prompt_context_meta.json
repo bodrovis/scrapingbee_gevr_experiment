@@ -1,0 +1,8 @@
+{
+  "full_rendered_html_characters": 17240,
+  "prompt_html_characters": 17240,
+  "html_prompt_limit": 120000,
+  "truncated": false,
+  "oracle_url_exposed_to_model": false,
+  "unrendered_html_exposed_to_model": false
+}

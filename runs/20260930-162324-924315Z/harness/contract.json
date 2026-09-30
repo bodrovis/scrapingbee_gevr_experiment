@@ -1,0 +1,12 @@
+{
+  "target_url": "https://books.toscrape.com/",
+  "expected_items": 20,
+  "exact_fields": true,
+  "field_requirements": {
+    "title": "non-empty string",
+    "price_gbp": "JSON number representing the GBP price",
+    "in_stock": "boolean",
+    "rating": "integer from 1 to 5",
+    "product_url": "absolute http(s) URL"
+  }
+}

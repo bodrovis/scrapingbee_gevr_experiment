@@ -1,0 +1,19 @@
+{
+  "python_version": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "requested_model": "gpt-5.6",
+  "packages": {
+    "beautifulsoup4": "4.15.0",
+    "openai": "3.22.1",
+    "python-dotenv": "1.2.3",
+    "requests": "2.34.2"
+  },
+  "harness_sha256": {
+    "runner.py": "d2725e44227125e7ef6dda06accca1a174da70ffb83cdead3165938b7dd8709b",
+    "prompts.py": "471dcf51f77060eb7a55c0c2cde553aecfd54e3b9f94c262b7bb3f8ad281d50d",
+    "verifier.py": "49aa08add976a656452c2c6c440d8e095d0bfbe6d4cb457b33c9018fbd02b3ef",
+    "contract.json": "0c8c5b7c7d02a68e8802d57a157e8818f08895925d278eb313357a41013b487e",
+    "pyproject.toml": "2fea4bea5b4434a022688e7db699342f4ecdea33e6a0b722298381d5402378b2",
+    "uv.lock": "ae5b3cf40a76e3a02013dc2f564c32f3b75c15056e904fd594170554039b39b6"
+  }
+}

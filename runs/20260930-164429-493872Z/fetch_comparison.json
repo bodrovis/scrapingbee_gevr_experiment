@@ -1,0 +1,9 @@
+{
+  "initial_html_product_cards": 0,
+  "rendered_html_product_cards": 16,
+  "oracle_product_count": 16,
+  "wait_for": "#js-product-list[data-ready=\"true\"]",
+  "initial_fetch_credits": 1,
+  "rendered_fetch_credits": 5,
+  "scrapingbee_total_credits": 6
+}

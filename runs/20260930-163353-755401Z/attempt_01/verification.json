@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "harness_error": false,
+  "phase": "execute_verify",
+  "cases": {
+    "catalogue_page_1": {
+      "role": "generation",
+      "url": "https://books.toscrape.com/",
+      "passed": true,
+      "harness_error": false,
+      "stats": {
+        "item_count": 20,
+        "reference_item_count": 20,
+        "matched_product_urls": 20,
+        "missing_product_urls": 0,
+        "unexpected_product_urls": 0,
+        "value_mismatch_count": 0,
+        "field_mismatch_counts": {}
+      }
+    },
+    "catalogue_page_2": {
+      "role": "holdout",
+      "url": "https://books.toscrape.com/catalogue/page-2.html",
+      "passed": true,
+      "harness_error": false,
+      "stats": {
+        "item_count": 20,
+        "reference_item_count": 20,
+        "matched_product_urls": 20,
+        "missing_product_urls": 0,
+        "unexpected_product_urls": 0,
+        "value_mismatch_count": 0,
+        "field_mismatch_counts": {}
+      }
+    },
+    "travel_category": {
+      "role": "holdout",
+      "url": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html",
+      "passed": true,
+      "harness_error": false,
+      "stats": {
+        "item_count": 11,
+        "reference_item_count": 11,
+        "matched_product_urls": 11,
+        "missing_product_urls": 0,
+        "unexpected_product_urls": 0,
+        "value_mismatch_count": 0,
+        "field_mismatch_counts": {}
+      }
+    }
+  },
+  "passed_case_names": [
+    "catalogue_page_1",
+    "catalogue_page_2",
+    "travel_category"
+  ],
+  "failed_case_names": []
+}

@@ -1,0 +1,13 @@
+{
+  "status_code": 200,
+  "scrapingbee_cost": "1",
+  "scrapingbee_request_id": "aa2bd6b0-4fa9-4e0e-9bcb-13d05fd0079a",
+  "resolved_url": "https://scrapifydatalabs.com/playground/js-rendered",
+  "content_type": "text/html; charset=UTF-8",
+  "render_js": false,
+  "wait_for": null,
+  "fetched_at_utc": "2026-09-30T16:44:31.329512+00:00",
+  "normalized_encoding": "UTF-8",
+  "raw_bytes": 9169,
+  "normalized_characters": 9162
+}

@@ -1,0 +1,76 @@
+--- previous_extractor.py
++++ revised_extractor.py
+@@ -1,4 +1,3 @@
+-import argparse
+ import json
+ import re
+ import sys
+@@ -11,15 +10,22 @@
+     while isinstance(current, Tag):
+         if current.name in {"script", "style", "template", "noscript"}:
+             return True
+-        if current.has_attr("hidden") or current.get("aria-hidden") == "true":
++        if current.has_attr("hidden"):
+             return True
+-        if current.name == "input" and current.get("type", "").lower() == "hidden":
++        if str(current.get("aria-hidden", "")).strip().lower() == "true":
+             return True
+-        style = current.get("style", "").lower()
+-        if re.search(r"(?:^|;)\s*display\s*:\s*none\b", style):
++        if current.name == "input" and str(current.get("type", "")).lower() == "hidden":
+             return True
+-        if re.search(r"(?:^|;)\s*visibility\s*:\s*(?:hidden|collapse)\b", style):
++
++        style = str(current.get("style", "")).lower()
++        if re.search(r"(?:^|;)\s*display\s*:\s*none(?:\s*!important)?\s*(?:;|$)", style):
+             return True
++        if re.search(
++            r"(?:^|;)\s*visibility\s*:\s*(?:hidden|collapse)(?:\s*!important)?\s*(?:;|$)",
++            style,
++        ):
++            return True
++
+         if current is boundary:
+             break
+         current = current.parent
+@@ -27,26 +33,30 @@
+ 
+ 
+ def visible_text(element):
+-    fragments = []
++    parts = []
+     for node in element.descendants:
+         if isinstance(node, NavigableString) and not isinstance(node, Comment):
+             if not is_hidden(node, element):
+                 text = re.sub(r"\s+", " ", str(node)).strip()
+                 if text:
+-                    fragments.append(text)
+-    return re.sub(r"\s+", " ", " ".join(fragments)).strip()
++                    parts.append(text)
++    return re.sub(r"\s+", " ", " ".join(parts)).strip()
+ 
+ 
+ def main():
+-    parser = argparse.ArgumentParser()
+-    parser.add_argument("source_url")
+-    parser.parse_args()
++    if len(sys.argv) != 2:
++        raise SystemExit(2)
+ 
++    source_url = sys.argv[1]
+     soup = BeautifulSoup(sys.stdin.read(), "html.parser")
+-    records = [
+-        {"position": position, "text": visible_text(item)}
+-        for position, item in enumerate(soup.select(".feed-item"), start=1)
+-    ]
++
++    records = []
++    for position, item in enumerate(soup.select(".feed-item"), 1):
++        records.append({
++            "position": position,
++            "text": visible_text(item),
++        })
++
+     print(json.dumps(records, ensure_ascii=False))
+ 
+ 

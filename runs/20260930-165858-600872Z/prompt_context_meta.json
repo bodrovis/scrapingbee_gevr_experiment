@@ -1,0 +1,9 @@
+{
+  "full_rendered_html_characters": 25552,
+  "prompt_html_characters": 25552,
+  "html_prompt_limit": 160000,
+  "truncated": false,
+  "initial_incomplete_html_exposed_to_model": false,
+  "fetch_refinement_details_exposed_to_model": false,
+  "expected_total_items_exposed_via_contract": false
+}

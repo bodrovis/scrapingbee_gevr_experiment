@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript Rendered Page Scraping Practice | Scrapify</title>
+  <meta name="description" content="Content is injected after load. Practice Playwright/Puppeteer waits, or discover the underlying JSON API." />
+  <meta name="keywords" content="javascript scraping practice, scrape spa, playwright wait for selector practice" />
+  <meta name="author" content="Scrapify Data Labs" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="canonical" href="https://scrapifydatalabs.com/playground/js-rendered.html" />
+  <link rel="alternate" type="text/plain" title="llms.txt" href="https://scrapifydatalabs.com/llms.txt" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://scrapifydatalabs.com/sitemap.xml" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Scrapify Playground" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="JavaScript Rendered Page Scraping Practice | Scrapify" />
+  <meta property="og:description" content="Content is injected after load. Practice Playwright/Puppeteer waits, or discover the underlying JSON API." />
+  <meta property="og:url" content="https://scrapifydatalabs.com/playground/js-rendered.html" />
+  <meta property="og:image" content="https://scrapifydatalabs.com/assets/og-default.svg" />
+  <meta property="og:image:alt" content="Scrapify Playground — free legal web scraping practice" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JavaScript Rendered Page Scraping Practice | Scrapify" />
+  <meta name="twitter:description" content="Content is injected after load. Practice Playwright/Puppeteer waits, or discover the underlying JSON API." />
+  <meta name="twitter:image" content="https://scrapifydatalabs.com/assets/og-default.svg" />
+
+  <meta name="application-name" content="Scrapify Playground" />
+  <meta name="rating" content="General" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://scrapifydatalabs.com/playground/js-rendered.html#webpage",
+      "url": "https://scrapifydatalabs.com/playground/js-rendered.html",
+      "name": "JavaScript Rendered Page Scraping Practice | Scrapify",
+      "description": "Content is injected after load. Practice Playwright/Puppeteer waits, or discover the underlying JSON API.",
+      "isPartOf": {
+        "@id": "https://scrapifydatalabs.com/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://scrapifydatalabs.com/playground/js-rendered.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://scrapifydatalabs.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Playground",
+          "item": "https://scrapifydatalabs.com/playground"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Js Rendered",
+          "item": "https://scrapifydatalabs.com/playground/js-rendered.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark">S</span>
+        <span class="logo-text">Scrapify <span>Playground</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href='/use-cases'>Use Cases</a></li>
+        <li><a href='/playground/static-products'>Playground</a></li>
+        <li><a href='/about'>About</a></li>
+              <li><a class="nav-discord" href="https://discord.gg/gwSB7u5Vz" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          Discord
+        </a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/">Home</a> <span>/</span>
+        <a href='/use-cases'>Use Cases</a> <span>/</span>
+        <span>JS Rendered</span>
+      </div>
+      <h1>JavaScript-rendered content</h1>
+      <p>The product grid is empty in the HTML source. JS fetches JSON and injects cards after load.</p>
+      <div class="page-meta">
+        <span class="badge badge-medium">Medium</span>
+        <span class="badge badge-js">JavaScript</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="playground">
+    <div class="container-wide playground-layout">
+      <aside class="playground-sidebar">
+        <h3>Playground</h3>
+        <ul class="playground-nav">
+          <li><a href='/playground/static-products'>Static Products</a></li>
+          <li><a href='/playground/static-blog'>Static Blog</a></li>
+          <li><a href='/playground/html-tables'>HTML Tables</a></li>
+          <li><a href="/playground/pagination/">Pagination</a></li>
+          <li><a href='/playground/nested-html'>Nested HTML</a></li>
+          <li><a href='/playground/multi-format'>Multi Format</a></li>
+          <li><a href='/playground/forms-login'>Forms &amp; Login</a></li>
+          <li><a class='active' href='/playground/js-rendered'>JS Rendered</a></li>
+          <li><a href='/playground/infinite-scroll'>Infinite Scroll</a></li>
+          <li><a href='/playground/client-filter'>Client Filters</a></li>
+          <li><a href='/playground/lazy-images'>Lazy Images</a></li>
+          <li><a href='/playground/ajax-load-more'>AJAX Load More</a></li>
+          <li><a href='/playground/delayed-content'>Delayed Content</a></li>
+          <li><a href="/data/products.json">JSON Products</a></li>
+        </ul>
+      </aside>
+
+      <div>
+        <div class="challenge-banner">
+          <div>
+            <h2>Challenge</h2>
+            <p>Either use a headless browser, or call <code>/data/products.json</code> directly (often smarter).</p>
+          </div>
+        </div>
+
+        <div class="scrape-hint">
+          <h3>What to watch</h3>
+          <ul>
+            <li>Initial HTML: <code>#js-product-list</code> is empty</li>
+            <li>After JS: cards with <code>.product-card</code> appear</li>
+            <li>Network: <code>GET /data/products.json</code></li>
+            <li>Ready flag: container gets <code>data-ready="true"</code></li>
+          </ul>
+        </div>
+
+        <div class="surface">
+          <div class="surface-header">
+            <h2>JS storefront</h2>
+            <span id="js-status" class="mono" style="color:var(--text-dim);font-size:0.85rem;">loading…</span>
+          </div>
+          <div class="surface-body">
+            <div id="js-product-list" class="product-grid" data-ready="false">
+              <div class="loading" id="js-loading"><span class="spinner"></span> Rendering products…</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:0;padding:0;">
+        <span>JS Rendered · Scrapify Playground</span>
+        <a href='/use-cases'>All use cases</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/playground/js-rendered.js"></script>
+</body>
+</html>

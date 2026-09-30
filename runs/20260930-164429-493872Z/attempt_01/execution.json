@@ -1,0 +1,10 @@
+{
+  "preflight_passed": true,
+  "stdout_bytes": 1637,
+  "stderr_bytes": 0,
+  "stdout_truncated": false,
+  "stderr_truncated": false,
+  "timed_out": false,
+  "output_limit_bytes": 1000000,
+  "returncode": 0
+}

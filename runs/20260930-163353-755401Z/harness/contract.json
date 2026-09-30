@@ -1,0 +1,24 @@
+{
+  "generation_target": {
+    "name": "catalogue_page_1",
+    "url": "https://books.toscrape.com/"
+  },
+  "holdout_targets": [
+    {
+      "name": "catalogue_page_2",
+      "url": "https://books.toscrape.com/catalogue/page-2.html"
+    },
+    {
+      "name": "travel_category",
+      "url": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
+    }
+  ],
+  "exact_fields": true,
+  "field_requirements": {
+    "title": "non-empty string",
+    "price_gbp": "JSON number representing the GBP price",
+    "in_stock": "boolean",
+    "rating": "integer from 1 to 5",
+    "product_url": "absolute http(s) URL"
+  }
+}

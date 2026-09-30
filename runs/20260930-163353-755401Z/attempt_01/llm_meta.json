@@ -1,0 +1,19 @@
+{
+  "response_id": "resp_0b10d4cc4defc693006abd39f6e37c87d2b72e66a7fd4a5217",
+  "requested_model": "gpt-5.6",
+  "returned_model": "gpt-5.6-sol",
+  "usage": {
+    "input_tokens": 10461,
+    "input_tokens_details": {
+      "cache_write_tokens": 10458,
+      "cached_tokens": 0
+    },
+    "output_tokens": 888,
+    "output_tokens_details": {
+      "reasoning_tokens": 446
+    },
+    "total_tokens": 11349
+  },
+  "prompt_sha256": "9f6e0a1f079b3ae90d2a438b2ec1969040c672f55e3a05d5afe52c47b86a77ca",
+  "developer_instructions_sha256": "47bfdf69d49319c6dfe5249f5001664f945f4218c0adfada9ca5ebd990a76c48"
+}
